@@ -1,9 +1,9 @@
 use diesel::prelude::*;
-use diesel_test::models::User;
-use diesel_test::*;
+use diesel_on_lambda::models::User;
+use diesel_on_lambda::*;
 
 fn main() {
-    use diesel_test::schema::user::dsl::*;
+    use diesel_on_lambda::schema::user::dsl::*;
 
     let connection = &mut establish_connection();
     let results = user
